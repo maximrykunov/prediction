@@ -3,4 +3,11 @@ ul.users
   - @users.each do |user|
     li
       = link_to user.email, user
+      / - if 1 == 1
+      /   | &nbsp;|&nbsp;
+      /   = link_to 'edit', edit_user_path(user)
+
+
+      | &nbsp;|&nbsp;
       | signed up #{user.created_at.to_date}
+
