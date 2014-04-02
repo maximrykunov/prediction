@@ -29,3 +29,18 @@ end
 group :production do
   gem 'unicorn'
 end
+
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'capybara-angular'
+  gem 'capybara-webkit'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+  gem 'should_not'
+  gem 'fuubar'
+end
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'ffaker'
+end
